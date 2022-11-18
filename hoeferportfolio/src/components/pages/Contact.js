@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './style.css';
 
+
 function Form() {
     // Here we set two state variables for firstName and lastName using `useState`
     const [firstName, setFirstName] = useState('');
@@ -14,7 +15,7 @@ function Form() {
 
         // Ternary statement that will call either setFirstName or setLastName based on what field the user is typing in
         return name === 'firstName' ? setFirstName(value) : setLastName(value) 
-
+    }
     const handleFormSubmit = (e) => {
         // Preventing the default behavior of the form submit (which is to refresh the page)
         e.preventDefault();
@@ -44,6 +45,7 @@ return (
                 onChange={handleInputChange}
                 type="text"
                 placeholder="First Name"
+                
             />
             <input
                 value={lastName}
