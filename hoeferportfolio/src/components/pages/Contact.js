@@ -1,22 +1,78 @@
-import React from 'react';
+import React, { useState } from 'react';
+import './style.css';
 
-export default function Contact() {
-    return (
-        <div>
-            <h1>Contact Page</h1>
-            <p>
-                Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-                molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-                magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-                efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-                mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-                posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-                faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-                ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-                dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-                conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-                rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-            </p>
-        </div>
-    );
+function Form() {
+    // Here we set two state variables for firstName and lastName using `useState`
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+
+    const handleInputChange = (e) => {
+        // Getting the value and name of the input which triggered the change
+        const { name, value } = e.target;
+
+        // Ternary statement that will call either setFirstName or setLastName based on what field the user is typing in
+        return name === 'firstName' ? setFirstName(value) : setLastName(value) : setEmail(value) : setMessage(value);
+    };
+
+    const handleFormSubmit = (e) => {
+        // Preventing the default behavior of the form submit (which is to refresh the page)
+        e.preventDefault();
+
+        alert(`Your message has been submitted`);
+
+        if (inputType === 'firstName') {
+            setFirstName(inputValue);
+        } else if (inputType === 'lastName') {
+            setLastName(inputValue);
+        } else if (inputType === 'email') {
+            setEmail(inputValue);
+        } else {
+            setMessage(inputValue);
+    };
+};
+
+return (
+    <div>
+        <p>
+            Input your message and we'll contact you soon!
+        </p>
+        <form className="form">
+            <input //controlled element
+                value={firstName}
+                name="firstName"
+                onChange={handleInputChange}
+                type="text"
+                placeholder="First Name"
+            />
+            <input
+                value={lastName}
+                name="lastName"
+                onChange={handleInputChange}
+                type="text"
+                placeholder="Last Name"
+            />
+            <input
+                value={email}
+                name="email"
+                onChange={handleInputChange}
+                type="email"
+                placeholder="email"
+            />
+            <input
+                value={message}
+                name="message"
+                onChange={handleInputChange}
+                type="message"
+                placeholder="message"
+            />
+            <button type="button" onClick={handleFormSubmit}>
+                Submit
+            </button>
+        </form>
+    </div>
+);
 }
+
+export default Form;
