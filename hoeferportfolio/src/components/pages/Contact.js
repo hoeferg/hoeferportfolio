@@ -13,8 +13,7 @@ function Form() {
         const { name, value } = e.target;
 
         // Ternary statement that will call either setFirstName or setLastName based on what field the user is typing in
-        return name === 'firstName' ? setFirstName(value) : setLastName(value) : setEmail(value) : setMessage(value);
-    };
+        return name === 'firstName' ? setFirstName(value) : setLastName(value) 
 
     const handleFormSubmit = (e) => {
         // Preventing the default behavior of the form submit (which is to refresh the page)
