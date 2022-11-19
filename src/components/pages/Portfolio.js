@@ -52,7 +52,7 @@ export default function Portfolio() {
                     </a>
                 </div>
 
-                <div id ="note-taker">
+                {/* <div id ="note-taker">
                     <a href="#" className="flex-item work2">
                         <div>
                             <h3>Horiseon</h3>
@@ -72,7 +72,7 @@ export default function Portfolio() {
                             </span>
                         </div>
                     </a>
-                </div>
+                </div> */}
 
             </div>
         </div >
