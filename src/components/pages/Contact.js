@@ -1,6 +1,7 @@
-import React, { useState, useRef } from 'react';
+import React, { useRef } from 'react';
 import '../../../src/index.css';
 import emailjs from 'emailjs-com'
+import './Contact.css';
 
 
 function Form() {
