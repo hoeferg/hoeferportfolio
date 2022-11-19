@@ -6,7 +6,7 @@ export default function Home() {
 
         <div>
             <section>
-                <h1>Gayle Random Changes</h1>
+                <h1>Gayle Hoefer's Portfolio</h1>
                 <div id="id-card" className="w3-center w3-container w3-theme-l2 w3-col s11 l2 w3-round-large w3-card">
                     <img className="w3-col s10 w3-margin-top w3-round" src="./assets/images/IMG_0372.jpg" alt="" style={{float: "none"}} />
                     <figcaption className="{{w3-large w3-col s12}}" />
@@ -45,10 +45,7 @@ export default function Home() {
                         site that does not function is not worth visiting but I find that when function following design can
                         make for less refactoring to allow for the style desired.
                     </p>
-                    <p className="welcome-p">
-                        Please take a look at some of my tinkering below
-                    </p>
-                </article>
+                    </article>
             </section>
         </div>
 
