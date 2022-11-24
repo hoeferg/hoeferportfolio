@@ -2,6 +2,8 @@ import React, { useRef } from 'react';
 import '../../../src/index.css';
 import emailjs from 'emailjs-com'
 import './Contact.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap';
 
 
 function Form() {

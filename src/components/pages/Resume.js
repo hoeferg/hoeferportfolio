@@ -1,5 +1,7 @@
 import React from 'react';
 import './Resume.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap';
 
 export default function Resume() {
     return (

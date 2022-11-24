@@ -1,11 +1,13 @@
 import React from 'react';
-// import 'Portfolio.css';
+import './Portfolio.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap';
 
 export default function Portfolio() {
     return (
         <div>
 
-            <div id="works" className="page-section flex-container">
+            <div id="works" className="page-section flex-container p-2">
                 <h2>My Portfolio</h2>
 
                 <div id="nonsocial-drinker">
@@ -52,7 +54,7 @@ export default function Portfolio() {
                     </a>
                 </div>
 
-                {/* <div id ="note-taker">
+                <div id ="note-taker">
                     <a href="#" className="flex-item work2">
                         <div>
                             <h3>Horiseon</h3>
@@ -72,7 +74,7 @@ export default function Portfolio() {
                             </span>
                         </div>
                     </a>
-                </div> */}
+                </div>
 
             </div>
         </div >
