@@ -7,11 +7,11 @@ export default function Portfolio() {
     return (
         <div>
 
-            <div id="works" className="page-section flex-container p-2">
-                <h2>My Portfolio</h2>
 
-                <div id="nonsocial-drinker">
-                    <a href="https://trufl.github.io/nonsocial-drinker/" className="flex-item work1">
+            <h2 className='p-2'>My Portfolio</h2>
+            <div id="works" className="page-section p-2  .d-inline-flex">
+                <div id="nonsocial-drinker" className='border border-primary'>
+                    <a href="https://trufl.github.io/nonsocial-drinker/" className="flex-item work1 flex-container">
                         <div>
                             <h3>Social Interaction</h3>
                             <span>
@@ -21,19 +21,19 @@ export default function Portfolio() {
                     </a>
                 </div>
 
-                <div id="weather-dashboard">
-                    <a href="https://hoeferg.github.io/weather-dashboard/" className="flex-item work2">
+                <div id="weather-dashboard" className='border border-primary'>
+                    <a href="https://hoeferg.github.io/weather-dashboard/" className="flex-item work2 ">
                         <div>
                             <h3>Weather Dashboard</h3>
                             <span>
-                                See the current weather and future forecast. 
+                                See the current weather and future forecast.
                             </span>
                         </div>
                     </a>
                 </div>
 
                 <div id="jate">
-                    <a href="https://git.heroku.com/service-worker-bootcamp.git" className="flex-item work2">
+                    <a href="https://git.heroku.com/service-worker-bootcamp.git" className=" border border-primary flex-item work2">
                         <div>
                             <h3>JATE</h3>
                             <span>
@@ -44,18 +44,18 @@ export default function Portfolio() {
                 </div>
 
                 <div id="e-commerce">
-                    <a href="https://github.com/hoeferg/e-commerce" className="flex-item work2">
+                    <a href="https://github.com/hoeferg/e-commerce" className="flex-item work2 border border-primary">
                         <div>
                             <h3>E-commerce</h3>
                             <span>
-                                This application is the backend of a e-commerce that keeps track of stock.  
+                                This application is the backend of a e-commerce that keeps track of stock.
                             </span>
                         </div>
                     </a>
                 </div>
 
-                <div id ="note-taker">
-                    <a href="#" className="flex-item work2">
+                <div id="note-taker">
+                    <a href="#" className="flex-item work2 border border-primary">
                         <div>
                             <h3>Horiseon</h3>
                             <span>
@@ -66,7 +66,7 @@ export default function Portfolio() {
                 </div>
 
                 <div>
-                    <a href="#" className="flex-item work2">
+                    <a href="#" className="flex-item work2 border border-primary">
                         <div>
                             <h3>Horiseon</h3>
                             <span>
