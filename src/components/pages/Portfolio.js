@@ -5,12 +5,12 @@ import 'bootstrap/dist/js/bootstrap';
 
 export default function Portfolio() {
     return (
-        <div>
+        <div id="portfolio">
 
 
             <h2 className='p-2'>My Portfolio</h2>
-            <div id="works" className="page-section p-2  .d-inline-flex">
-                <div id="nonsocial-drinker" className='border border-primary'>
+            <div id="works" className="page-section p-2  d-flex flex-wrap justify-content-evenly">
+                <div id="nonsocial-drinker" className='border border-primary project'>
                     <a href="https://trufl.github.io/nonsocial-drinker/" className="flex-item work1 flex-container">
                         <div>
                             <h3>Social Interaction</h3>
@@ -21,7 +21,7 @@ export default function Portfolio() {
                     </a>
                 </div>
 
-                <div id="weather-dashboard" className='border border-primary'>
+                <div id="weather-dashboard" className='border border-primary project'>
                     <a href="https://hoeferg.github.io/weather-dashboard/" className="flex-item work2 ">
                         <div>
                             <h3>Weather Dashboard</h3>
@@ -32,8 +32,8 @@ export default function Portfolio() {
                     </a>
                 </div>
 
-                <div id="jate">
-                    <a href="https://git.heroku.com/service-worker-bootcamp.git" className=" border border-primary flex-item work2">
+                <div id="jate" className='border border-primary project'>
+                    <a href="https://git.heroku.com/service-worker-bootcamp.git" >
                         <div>
                             <h3>JATE</h3>
                             <span>
@@ -43,8 +43,8 @@ export default function Portfolio() {
                     </a>
                 </div>
 
-                <div id="e-commerce">
-                    <a href="https://github.com/hoeferg/e-commerce" className="flex-item work2 border border-primary">
+                <div id="e-commerce" className='border border-primary project'>
+                    <a href="https://github.com/hoeferg/e-commerce" >
                         <div>
                             <h3>E-commerce</h3>
                             <span>
@@ -54,8 +54,8 @@ export default function Portfolio() {
                     </a>
                 </div>
 
-                <div id="note-taker">
-                    <a href="#" className="flex-item work2 border border-primary">
+                <div id="note-taker" className='border border-primary project'>
+                    <a href="#" >
                         <div>
                             <h3>Horiseon</h3>
                             <span>
@@ -65,8 +65,8 @@ export default function Portfolio() {
                     </a>
                 </div>
 
-                <div>
-                    <a href="#" className="flex-item work2 border border-primary">
+                <div className='border border-primary project'>
+                    <a href="#" >
                         <div>
                             <h3>Horiseon</h3>
                             <span>

@@ -8,34 +8,33 @@ export default function Resume() {
         <div>
             <h1>Gayle's Skills</h1>
 
-            <button>
-                <a href="https://docs.google.com/document/d/1-Swy1amr-jTnt4_nbrbtTLZwdt4Ltg6U/edit?usp=sharing&ouid=101731218236967918748&rtpof=true&sd=true">
+            <iframe src="https://docs.google.com/document/d/e/2PACX-1vQGBMIHDpIqvHhSsm6zerOcDUNtfHMUoSCA-O2Sus44eCQswXe55BQuHwR0pbHqjg/pub?embedded=true"></iframe>
 
-                </a>
-                <p>View Gayle's Resume Online</p>
+            <button><p>
+                <a href={process.env.PUBLIC_URL+"/assets/hoeferGayleResume.pdf"} download>            View Gayle's Resume Online</a></p>
             </button>
 
             <h2>Technical Skills</h2>
 
-            <div>
-                <ls>HTML</ls>
-                <ls>CSS</ls>
-                <ls>JavaScript</ls>
-                <ls>Bootstrap</ls>
-                <ls>Node.js</ls>
-                <ls>React</ls>
-                <ls>Express</ls>
-            </div>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Bootstrap</li>
+                <li>Node.js</li>
+                <li>React</li>
+                <li>Express</li>
+            </ul>
 
-            <div>
-                <ls>MySQL</ls>
-                <ls>Templating Engines: Handlebars</ls>
-                <ls>PWA</ls>
-                <ls>React</ls>
-                <ls>GraphQl</ls>
-                <ls>GitHub</ls>
-            </div>
+            <ul>
+                <li>MySQL</li>
+                <li>Templating Engines: Handlebars</li>
+                <li>PWA</li>
+                <li>React</li>
+                <li>GraphQl</li>
+                <li>GitHub</li>
+            </ul>
 
-        </div>
+        </div >
     );
 }
